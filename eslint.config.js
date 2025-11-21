@@ -3,15 +3,7 @@ import tsparser from "@typescript-eslint/parser";
 
 export default [
   {
-    ignores: [
-      "dist",
-      "coverage",
-      "jest.config.ts",
-      "eslint.config.js"
-    ],
-  },
-  {
-    files: ["src/**/*.ts", "tests/**/*.ts"],
+    files: ["**/*.ts"],
     languageOptions: {
       parser: tsparser,
       parserOptions: {
